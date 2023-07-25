@@ -1,0 +1,39 @@
+<div class="modal-overlay">
+    <div class="modal-content">
+        <div class="form-container">
+            <div class="form-box">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="biografia">Biografía:</label>
+                        <textarea id="biografia" name="biografia" placeholder="Ingrese su biografía"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="img-url">Img-url:</label>
+                        <input type="file" id="img-url" name="img-url" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aparicion">Aparición:</label>
+                        <input type="text" id="aparicion" name="aparicion" placeholder="Ingrese la aparición" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="casa">Casa:</label>
+                        <select id="casa" name="casa">
+                        <option value="Marvel">Marvel</option>
+                        <option value="DC">DC</option>
+                          </select>
+                    </div>
+                    <button (click)="cerrar.emit()" type="button" class="btn btn-primary">Cerrar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

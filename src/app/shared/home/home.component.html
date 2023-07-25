@@ -1,0 +1,11 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Comics Apps</h1>
+        <p class="lead">Esta es una aplicacion de Comics.</p>
+    </div>
+</div>
+<pre *ngIf="auth.user$ | async as profile">
+    <p>
+        <code>Bienvenido {{profile.given_name}}</code>
+    </p>
+</pre>
